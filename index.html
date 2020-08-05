@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+</head>
+<body>
+    <header>
+        <div id="pink-container">
+            <a href="https://abvstudio.ru/" target="_blank"><img class="logo" src="img/logo.svg" alt="АБВ!студия"></a>
+            <span class="nav">
+                <ul>
+                    <li id="menu1" onclick="focusPink(), focusMenu()">Главная</li>
+                    <li id="para1" onclick="focusYellow(), focusParagraph1()">Обратная связь</li>
+                </ul>
+            </span>
+            <div class="test-text">
+                <p id="hi">Привет!</p>
+                <p id="im-test">Я тестовый текст</p> 
+                <p id="show-animation">Покажи мне чудеса анимации</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="yellow-container">
+            <form id="mailForm">
+                    <input id="email" type="email" name="email" placeholder="E-mail">
+                    <input id="name" type="text" name="name" placeholder="Имя">
+                    <textarea id="message" name="message" placeholder="Сообщение"></textarea> 
+                    <button id="sendMail" type="button" id="sendMail">Отправить</button>
+            </form> 
+            <div id="errorMess"></div>
+        </div>
+        <div class="interior">
+            <img class="hipster" src="img/hipster.svg" alt="Истинный хипстер">
+            <img class="women" src="img/women.svg" alt="Женщина с флагом">
+            <span class="pages">
+                <span id="menu1" onclick="focusPink(), focusMenu()"><img class="arrow-left" src="img/arrow-left.svg" alt="Предыдущая страница"></span>
+                <span id="para1" onclick="focusYellow(), focusParagraph1()"><img class="arrow-right" src="img/arrow-right.svg" alt="Следующая страница"></span>
+                <span class="center-text">Переход между страницами</span>
+            </span>
+        </div>
+    </main>
+    <div id="alert_dialog" style="display:none;">
+        <div id="alert_fog"></div>
+        <div id="alert_body">
+            <span id="alert_button"><span id="alert_close">X</span></span>
+            <span id="alert_text"></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

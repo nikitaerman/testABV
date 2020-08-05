@@ -1,0 +1,280 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 100%; 
+    font-family: 'PT Sans', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    width:12%;
+    height:21%;
+    left: 1.02%;
+    top: 2.93%;
+}
+
+.nav ul{
+    margin: 0.93% 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    cursor: pointer;
+}
+
+.nav li { 
+    padding-right: 6.094%;
+    padding-left: 0;
+    position: relative;
+    display: inline-block; 
+    left: 33.02%;
+}
+
+#menu1 {
+    font-weight: 600;
+}
+
+.nav li:hover {
+    color: rgba(61, 22, 22, 0.664);
+}
+
+#pink-container {
+    position: absolute;
+    width: 83.125%;
+    height: 44.259%;
+    left: 16.875%;
+    top: 5.741%;
+    background: #FF97E2; 
+
+}
+
+#yellow-container {
+    position: absolute;
+    width: 88.646%;
+    height: 47.259%;
+    left: 0;
+    top: 16.667%;
+    background: #F0F35B;
+    z-index: -1;
+}
+
+#mailForm {
+    position: relative;
+    left: 19.1%;
+    width: 81%;
+    height: 62%;
+    font-size: 1.5vw;
+}
+
+#email:focus, #name:focus, #sendMail:focus, #message:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+#mailForm input {
+    position: relative;
+    left: 22.58%;
+    font-size: 1.5vw;
+    margin-top: 2%;
+    margin-right: 1.6%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#mailForm #email {
+    left: 0%;
+    width: 28.23%;
+    height: 19.06%;
+    padding-left: 1.458%;
+    color: black !important;
+}
+
+#mailForm #name {
+    left: 0%;
+    width: 28.23%;
+    height: 19.06%;
+    padding-left: 1.458%;
+    color: black !important;
+}
+
+#mailForm #sendMail {
+    position: relative;
+    width: 33%;
+    height: 20.7%;
+    font-size: 1.5vw;
+    background: #C4C4C4;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+}
+
+#mailForm #message {
+    position: absolute;
+    width: 94.7%;
+    height: 48%;
+    top: 36%;
+    left: 0%;
+    font-size: 1.5vw;
+    padding: 1% 1.458%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#errorMess {
+    position: relative;
+    left: 20.3%;
+    top: -1%;
+    font-size: 1.5vw;
+    width: 80%;
+    height: 9%;
+    font-family: 'PT Sans', sans-serif;
+    cursor: default;
+}
+
+
+.test-text {
+    position: absolute;
+    width: 79.448%;
+    height: 66.945%;
+    top: 27.615%;
+    left: 3.446%;
+}
+
+.test-text p {
+    height: 30%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 4.862vw;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-name: show;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+@keyframes show {
+from {opacity: 0;} to {opacity: 1;}
+}
+
+#hi {
+    width: 29.292%;
+}
+
+#im-test {
+    width: 54.719%;
+}
+
+#hi:hover, #im-test:hover, #show-animation:hover {
+    color: rgba(61, 22, 22, 0.664);
+}
+
+.interior {
+    position: absolute;
+    width: 100%;
+    height: 54.455%;
+    top: 45.61%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.hipster {
+    height: 106%;
+    width: 22%;
+    filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.39));
+}
+
+.women {
+    position: absolute;
+    height: 100%;
+    width: 28.4%;
+    left: 67.5%;
+    top: 7%;
+}
+
+.pages {
+    position: absolute;
+    width: 50%;
+    height:10%;
+    bottom:5%
+}
+
+.pages a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    height: 0px;
+}
+
+.arrow-left {
+    width: 18.54%;
+    position: absolute;
+    display: block; 
+    left: 0%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 16.29%;
+    position: absolute;
+    display: block; 
+    top: 3%;
+    right: 0%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.center-text {
+    position: absolute;
+    width: 63%;
+    left: 20%;
+    font-size: 2.5vw;
+    cursor: default;
+}
+
+#alert_dialog {
+    z-index: 999; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#alert_fog {
+    background: rgba(0, 0, 0, 0.7);;
+    z-index: 4; 
+    width: 100%;
+    height: 100%;
+}
+ 
+#alert_body {
+    z-index: 4; 
+    width: 45.9%;
+    height: 46%; 
+    position: absolute;
+    top: 25%; 
+    left:25%;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0);
+}
+
+ 
+#alert_text {
+    top: 42%;
+    font-size: 2.5vw;
+    display: block;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+ 
+#alert_button {
+    position: absolute;
+    right: 2.6%;
+    top: 3.6%;
+    font-size: 2.2vw;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+
